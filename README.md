@@ -3,6 +3,7 @@ Elektromos Ház
 # Backgrounds:
 * https://www.youtube.com/watch?v=4SXtGIx0x5w (inverter overloads by victron)
 * https://www.youtube.com/watch?v=_BOAbYmP1bA (generator optimization)
+* https://www.youtube.com/watch?v=cXd6B-LWPe0
 
 # Lessons learned from background
 * For loads with a cosinus of 0.7, the inverter has to support 200% of that load.
