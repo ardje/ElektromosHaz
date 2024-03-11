@@ -1,10 +1,12 @@
 digraph Power {
+	splines = true;
 	graph [
 		rankdir ="TB"
 		ranksep ="2"
 	];
-{
-	node [ shape=rectangle ];
+	{
+		node [ shape="rectangle" ];
+
 	VML1M [ pos="0,10!" shape=plain label=<
 <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
 <TR> <TD COLSPAN="9">MPII L1 M</TD> </TR>
@@ -25,7 +27,8 @@ digraph Power {
 <TD PORT="ACO1P">P</TD>
 </TR>
 </TABLE>>];
-	VML1S [ pos="1,10!" shape=plain label=<
+
+	VML1S [ pos="3,10!" shape=plain label=<
 <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
 <TR> <TD COLSPAN="9">MPII L1 S</TD> </TR>
 <TR>
@@ -45,7 +48,8 @@ digraph Power {
 <TD PORT="ACO1P">P</TD>
 </TR>
 </TABLE>>];
-	VML2M [ pos="2,10!" shape=plain label=<
+
+	VML2M [ pos="6,10!" shape=plain label=<
 <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
 <TR> <TD COLSPAN="9">MPII L2 M</TD> </TR>
 <TR>
@@ -65,7 +69,8 @@ digraph Power {
 <TD PORT="ACO1P">P</TD>
 </TR>
 </TABLE>>];
-	VML2S [ pos="3,10!" shape=plain label=<
+
+	VML2S [ pos="9,10!" shape=plain label=<
 <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
 <TR> <TD COLSPAN="9">MPII L2 S</TD> </TR>
 <TR>
@@ -85,7 +90,8 @@ digraph Power {
 <TD PORT="ACO1P">P</TD>
 </TR>
 </TABLE>>];
-	VML3M [ pos="4,10!" shape=plain label=<
+
+	VML3M [ pos="12,10!" shape=plain label=<
 <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
 <TR> <TD COLSPAN="9">MPII L3 M</TD> </TR>
 <TR>
@@ -105,7 +111,8 @@ digraph Power {
 <TD PORT="ACO1P">P</TD>
 </TR>
 </TABLE>>];
-	VML3S [ pos="5,10!" shape=plain label=<
+
+	VML3S [ pos="15,10!" shape=plain label=<
 <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
 <TR> <TD COLSPAN="9">MPII L3 S</TD> </TR>
 <TR>
@@ -125,18 +132,71 @@ digraph Power {
 <TD PORT="ACO1P">P</TD>
 </TR>
 </TABLE>>];
+
+	INL1 [ pos="0,2!" shape=plain label=<
+<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+<TR> <TD>INL1</TD>
+<TD PORT="1">1</TD><TD PORT="2">2</TD><TD PORT="3">3</TD><TD PORT="4">4</TD>	</TR>
+	</TABLE> >];
+		3
+	INL2 [ pos="1,3!" shape=plain label=<
+<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+<TR> <TD>INL2</TD>
+<TD PORT="1">1</TD><TD PORT="2">2</TD><TD PORT="3">3</TD><TD PORT="4">4</TD>	</TR>
+	</TABLE> >];
+		3
+	INL3 [ pos="2,4!" shape=plain label=<
+<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+<TR> <TD>INL3</TD>
+<TD PORT="1">1</TD><TD PORT="2">2</TD><TD PORT="3">3</TD><TD PORT="4">4</TD>	</TR>
+	</TABLE> >];
+		3
+	INN [ pos="3,5!" shape=plain label=<
+<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+<TR> <TD>INN</TD>
+<TD PORT="1">1</TD><TD PORT="2">2</TD><TD PORT="3">3</TD><TD PORT="4">4</TD><TD PORT="5">5</TD><TD PORT="6">6</TD><TD PORT="7">7</TD><TD PORT="8">8</TD>	</TR>
+	</TABLE> >];
+		3
+	INE [ pos="4,6!" shape=plain label=<
+<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+<TR> <TD>INE</TD>
+<TD PORT="1">1</TD><TD PORT="2">2</TD><TD PORT="3">3</TD><TD PORT="4">4</TD><TD PORT="5">5</TD><TD PORT="6">6</TD><TD PORT="7">7</TD><TD PORT="8">8</TD>	</TR>
+	</TABLE> >];
+		3
+	OUT1L1 [ pos="5,2!" shape=plain label=<
+<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+<TR> <TD>OUT1L1</TD>
+<TD PORT="1">1</TD><TD PORT="2">2</TD><TD PORT="3">3</TD><TD PORT="4">4</TD>	</TR>
+	</TABLE> >];
+		3
+	OUT1L2 [ pos="6,3!" shape=plain label=<
+<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+<TR> <TD>OUT1L2</TD>
+<TD PORT="1">1</TD><TD PORT="2">2</TD><TD PORT="3">3</TD><TD PORT="4">4</TD>	</TR>
+	</TABLE> >];
+		3
+	OUT1L3 [ pos="7,4!" shape=plain label=<
+<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+<TR> <TD>OUT1L3</TD>
+<TD PORT="1">1</TD><TD PORT="2">2</TD><TD PORT="3">3</TD><TD PORT="4">4</TD>	</TR>
+	</TABLE> >];
+		3
+	OUT1N [ pos="8,5!" shape=plain label=<
+<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+<TR> <TD>OUT1N</TD>
+<TD PORT="1">1</TD><TD PORT="2">2</TD><TD PORT="3">3</TD><TD PORT="4">4</TD><TD PORT="5">5</TD><TD PORT="6">6</TD><TD PORT="7">7</TD><TD PORT="8">8</TD>	</TR>
+	</TABLE> >];
+		3
+	OUT1E [ pos="9,6!" shape=plain label=<
+<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+<TR> <TD>OUT1E</TD>
+<TD PORT="1">1</TD><TD PORT="2">2</TD><TD PORT="3">3</TD><TD PORT="4">4</TD><TD PORT="5">5</TD><TD PORT="6">6</TD><TD PORT="7">7</TD><TD PORT="8">8</TD>	</TR>
+	</TABLE> >];
+		3
 	Elem1
 	Elem2
 	Elem3
 	Elem4
-	BusbarIn1L1 [ pos="0,2!" ];
-	BusbarIn1L2 [ pos="1,3!" ];
-	BusbarIn1L3 [ pos="2,4!" ];
-	BusbarIn1N [ pos="3,5!" ];
-	BusbarOut1L1
-	BusbarOut1L2
-	BusbarOut1L3
-	BusbarOut1N
 	CEE3PNI
 	CEE3PNP
 	LynxDist1
@@ -146,55 +206,56 @@ digraph Power {
 	}
 	{
 		edge [ color = "brown" ]
-	CEE3PNI->BusbarIn1L1
-	VML1M:ACINP->BusbarIn1L1
-	VML1S:ACINP->BusbarIn1L1
-	VML1M:ACO1P->BusbarOut1L1
-	VML1S:ACO1P->BusbarOut1L1
-	BusbarOut1L1->CEE3PNP
+	CEE3PNI->INL1:1
+	VML1M:ACINP->INL1:2
+	VML1S:ACINP->INL1:3
+	VML1M:ACO1P->OUT1L1:2
+	VML1S:ACO1P->OUT1L1:3
+	OUT1L1->CEE3PNP
 	}
 	{
 		edge [ color = "black" ]
-	CEE3PNI->BusbarIn1L2
-	VML2M:ACINP->BusbarIn1L2
-	VML2S:ACINP->BusbarIn1L2
-	VML2M:ACO1P->BusbarOut1L2
-	VML2S:ACO1P->BusbarOut1L2
-	BusbarOut1L2->CEE3PNP
+	CEE3PNI->INL2
+	VML2M:ACINP->INL2:2
+	VML2S:ACINP->INL2:3
+	VML2M:ACO1P->OUT1L2:2
+	VML2S:ACO1P->OUT1L2:3
+	OUT1L2->CEE3PNP
 	}
 	{
 		edge [ color = "darkgray" ]
-	CEE3PNI->BusbarIn1L3
-	VML3M:ACINP->BusbarIn1L3
-	VML3S:ACINP->BusbarIn1L3
-	VML3M:ACO1P->BusbarOut3L2
-	VML3S:ACO1P->BusbarOut3L2
-	BusbarOut1L3->CEE3PNP
+	CEE3PNI->INL3
+	VML3M:ACINP->INL3:2
+	VML3S:ACINP->INL3:3
+	VML3M:ACO1P->OUT1L3:2
+	VML3S:ACO1P->OUT1L3:3
+	OUT1L3->CEE3PNP
 	}
 	{
 		edge [ color = "blue" ]
-		CEE3PNI->BusbarIn1N
-		VML1M:ACINN->BusbarIn1N
-		VML1S:ACINN->BusbarIn1N
-		VML2M:ACINN->BusbarIn1N
-		VML2S:ACINN->BusbarIn1N
-		VML3M:ACINN->BusbarIn1N
-		VML3S:ACINN->BusbarIn1N
-		VML1M:ACO1N->BusbarOut1N
-		VML1S:ACO1N->BusbarOut1N
-		VML2M:ACO1N->BusbarOut1N
-		VML2S:ACO1N->BusbarOut1N
-		VML3M:ACO1N->BusbarOut1N
-		VML3S:ACO1N->BusbarOut1N
-		BusbarOut1N->CEE3PNP
+		CEE3PNI->INN:1
+		VML1M:ACINN->INN:2
+		VML1S:ACINN->INN:3
+		VML2M:ACINN->INN:4
+		VML2S:ACINN->INN:5
+		VML3M:ACINN->INN:6
+		VML3S:ACINN->INN:7
+		VML1M:ACO1N->OUT1N:2
+		VML1S:ACO1N->OUT1N:3
+		VML2M:ACO1N->OUT1N:4
+		VML2S:ACO1N->OUT1N:5
+		VML3M:ACO1N->OUT1N:6
+		VML3S:ACO1N->OUT1N:7
+		OUT1N:1->CEE3PNP
 	}
 	{
-		edge [ stype="dashed" color = "yellow" fillcolor="green" ]
-		VML1M->EarthBar
-		VML1S->EarthBar
-		VML2M->EarthBar
-		VML2S->EarthBar
-		VML3M->EarthBar
-		VML3S->EarthBar
+		edge [ style="dashed" color = "yellow" fillcolor="green" ]
+		VML1M:ACINE->INE:2
+		VML1S:ACINE->INE:3
+		VML2M:ACINE->INE:4
+		VML2S:ACINE->INE:5
+		VML3M:ACINE->INE:6
+		VML3S:ACINE->INE:7
 	}
 }
+
